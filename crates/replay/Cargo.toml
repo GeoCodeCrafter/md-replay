@@ -1,0 +1,21 @@
+[package]
+name = "md-replay-engine"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+futures.workspace = true
+md-core = { path = "../core" }
+md-storage = { path = "../storage" }
+prost.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tokio-stream.workspace = true
+tonic.workspace = true
+tracing.workspace = true
+
+[build-dependencies]
+protoc-bin-vendored.workspace = true
+tonic-build.workspace = true
+

@@ -1,0 +1,5 @@
+timestamp,symbol,type,price,size,bid_px,bid_sz,ask_px,ask_sz
+1704199200000,AAPL,trade,190.00,30,,,,
+2024-01-02T10:00:00.000800Z,AAPL,quote,,,189.98,110,190.02,100
+1704199200001,MSFT,trade,370.11,12,,,,
+2024-01-02T10:00:00.001100Z,MSFT,quote,,,370.10,60,370.14,64

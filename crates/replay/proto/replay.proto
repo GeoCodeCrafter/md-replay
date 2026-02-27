@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package replay;
+
+service ReplayService {
+  rpc StreamEvents(StreamRequest) returns (stream EventMessage);
+}
+
+message StreamRequest {
+  uint64 from_ns = 1;
+  uint64 to_ns = 2;
+  double speed = 3;
+  bool max_speed = 4;
+  bool step_mode = 5;
+}
+
+message Trade {
+  sint64 price_ticks = 1;
+  sint64 size = 2;
+}
+
+message Quote {
+  sint64 bid_px = 1;
+  sint64 bid_sz = 2;
+  sint64 ask_px = 3;
+  sint64 ask_sz = 4;
+}
+
+message EventMessage {
+  uint64 timestamp_ns = 1;
+  uint64 sequence = 2;
+  string venue = 3;
+  string symbol = 4;
+  oneof payload {
+    Trade trade = 5;
+    Quote quote = 6;
+  }
+}
