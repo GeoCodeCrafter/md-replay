@@ -106,8 +106,10 @@ fn parse_symbol_payload(
             });
         }
 
-        if let (Some(low), Some(high)) = (value_f64_at(&quote.low, idx), value_f64_at(&quote.high, idx))
-        {
+        if let (Some(low), Some(high)) = (
+            value_f64_at(&quote.low, idx),
+            value_f64_at(&quote.high, idx),
+        ) {
             let bid_px = f64_to_ticks(ticks, symbol, low.min(high))?;
             let ask_px = f64_to_ticks(ticks, symbol, high.max(low))?;
             out.push(PendingEvent {
