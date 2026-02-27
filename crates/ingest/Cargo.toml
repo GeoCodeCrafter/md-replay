@@ -1,0 +1,27 @@
+[package]
+name = "md-ingest"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+build = "build.rs"
+
+[features]
+default = []
+pcap = ["dep:pcap"]
+
+[dependencies]
+chrono.workspace = true
+csv.workspace = true
+md-core = { path = "../core" }
+pcap = { workspace = true, optional = true }
+rand.workspace = true
+rand_chacha.workspace = true
+reqwest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
+rust_decimal.workspace = true

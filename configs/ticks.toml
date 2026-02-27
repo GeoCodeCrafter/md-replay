@@ -1,0 +1,6 @@
+default_tick = "0.01"
+
+[symbols]
+AAPL = "0.01"
+MSFT = "0.01"
+NVDA = "0.05"

@@ -1,0 +1,13 @@
+[package]
+name = "md-storage"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+bincode.workspace = true
+crc32fast.workspace = true
+md-core = { path = "../core" }
+serde.workspace = true
+thiserror.workspace = true
+
