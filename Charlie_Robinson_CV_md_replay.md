@@ -3,7 +3,7 @@ Bradwell, NR31 9GD
 07985 127695  
 Robinsoncharlie55@gmail.com  
 linkedin.com/in/charlie-robinson-4742b1229  
-GitHub: add-your-github
+GitHub: https://github.com/Robinsoncharlie55
 
 ## Profile
 Data and systems-focused engineer with production geophysical data interpretation experience and strong Python automation background. Building Rust-based market data infrastructure focused on deterministic replay, binary parsing, and reproducible analytics workflows.
@@ -18,7 +18,7 @@ Data and systems-focused engineer with production geophysical data interpretatio
 
 ## Projects
 ### md-replay | Rust market data normalization and deterministic replay
-GitHub: add-your-repo-link
+GitHub: https://github.com/Robinsoncharlie55/md-replay
 
 - Designed canonical event model for trades and quotes with strict global sequencing and deterministic ordering.
 - Implemented four ingestion paths: three CSV schemas and mocked multicast UDP PCAP feed (ITCH-style binary messages).
